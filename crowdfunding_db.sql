@@ -24,8 +24,8 @@ CREATE TABLE Campaign (
     contact_id INT REFERENCES Contacts(contact_id),
     company_name VARCHAR,
     description VARCHAR,
-    goal NUMERIC,
-    pledged NUMERIC,
+    goal FLOAT,
+    pledged FLOAT,
     outcome VARCHAR,
     backers_count INT,
     country VARCHAR,
@@ -40,4 +40,3 @@ SELECT * FROM Contacts LIMIT 5;
 SELECT * FROM Category LIMIT 5;
 SELECT * FROM Subcategory LIMIT 5;
 SELECT * FROM Campaign LIMIT 5;
-
